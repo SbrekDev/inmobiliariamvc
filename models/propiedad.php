@@ -33,6 +33,7 @@ class Propiedad extends ActiveRecord {
         $this->creado = date('Y/m/d');
         $this->vendedorId = $args['vendedorId'] ?? '';
     }
+    
 
     public function validar(){
         
