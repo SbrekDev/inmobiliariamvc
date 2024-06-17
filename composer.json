@@ -1,0 +1,23 @@
+{
+    "name": "gonza/bienesraices",
+    "description": "creando un proyecto con POO",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Gonzalo Kerbs",
+            "email": "gonzakerbs@gmail.com"
+        }
+    ],
+    "require": {
+        "intervention/image": "^3.6",
+        "phpmailer/phpmailer": "^6.9",
+        "vlucas/phpdotenv": "^5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Model\\" : "./models",
+            "MVC\\" : "./",
+            "Controllers\\" : "./controllers"
+        }
+    }
+}
