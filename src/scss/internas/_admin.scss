@@ -1,3 +1,5 @@
+
+
 .alerta{
 
     padding: .5rem;
@@ -38,9 +40,15 @@ table.propiedades{
     .imagen-tabla{
         width: 10rem;
     }
+    .hidden_element_xs{
+        @include telefono{
+            display: none;
+        }
+    }
 
 }
 
 .imagen-small{
     width: 30rem;
 }
+

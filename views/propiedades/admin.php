@@ -25,9 +25,9 @@ use Model\Vendedor;
         <table class="propiedades">
             <thead>
                 <tr>
-                    <th>ID</th>
+                    <th class="hidden_element_xs">ID</th>
                     <th>Titulo</th>
-                    <th>Imagen</th>
+                    <th class="hidden_element_xs">Imagen</th>
                     <th>Precio</th>
                     <th>Acciones</th>
                 </tr>
@@ -36,9 +36,9 @@ use Model\Vendedor;
             <tbody> <!-- mostrar los resultados -->
                 <?php foreach( $propiedades as $propiedad ): ?>
                     <tr>
-                        <td><?php echo $propiedad->id ?></td>
+                        <td class="hidden_element_xs"><?php echo $propiedad->id ?></td>
                         <td><?php echo $propiedad->titulo; ?></td>
-                        <td>  <img src="/imagenes/<?php echo $propiedad->imagen; ?>" alt="img prueba" class="imagen-tabla">  </td>
+                        <td class="hidden_element_xs">  <img src="/imagenes/<?php echo $propiedad->imagen; ?>" alt="img prueba" class="imagen-tabla">  </td>
                         <td>$<?php echo $propiedad->precio; ?></td>
                         <td>
                             <form method="POST" class="W-100" action="/propiedades/eliminar">
@@ -55,12 +55,12 @@ use Model\Vendedor;
             </tbody>
         </table>
 
-        <h2> Vendedores</h2>
+        <h2>Vendedores</h2>
 
         <table class="propiedades">
             <thead>
                 <tr>
-                    <th>ID</th>
+                    <th class="hidden_element_xs">ID</th>
                     <th>Nombre</th>
                     <th>Telefono</th>
                     <th>Acciones</th>
@@ -71,7 +71,7 @@ use Model\Vendedor;
             <tbody> <!-- mostrar los resultados -->
                 <?php foreach( $vendedores as $vendedor ): ?>
                     <tr>
-                        <td><?php echo $vendedor->id ?></td>
+                        <td class="hidden_element_xs"><?php echo $vendedor->id ?></td>
                         <td><?php echo $vendedor->nombre . " " . $vendedor->apellido; ?></td>
                         <td><?php echo $vendedor->telefono; ?></td>
                         <td>
