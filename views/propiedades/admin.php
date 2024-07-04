@@ -14,9 +14,11 @@ use Model\Vendedor;
             <?php endif; ?>
         <?php endif; ?>
         
+        <div class="botones_nuevo">
+            <a href="/propiedades/crear" class="boton boton-verde">Nueva Propiedad</a>
+            <a href="/vendedores/crear" class="boton boton-amarillo">Nuevo Vendedor</a>
+        </div>
 
-        <a href="/propiedades/crear" class="boton boton-verde">Nueva Propiedad</a>
-        <a href="/vendedores/crear" class="boton boton-amarillo">Nuevo Vendedor</a>
 
         <h2>Propiedades</h2>    
 
